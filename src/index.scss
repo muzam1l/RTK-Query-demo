@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+$font-family-sans-serif: 'Roboto Condensed', sans-serif;
+
+// Override default variables before the import
+$body-bg: rgb(242, 242, 242);
+
+$input-placeholder-color: #42424280;
+
+// $enable-shadows: true;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
+input::-webkit-input-placeholder,
+input::-moz-placeholder {
+  font-size: 14px;
+}
+.title {
+  font-weight: 700;
+  font-size: 1.25em;
+}
+.red {
+  color: #e81123;
+}
+
+.fade-in {
+  animation: 2s ease-in 1s fadeInAnimation;
+}
+.fade-out {
+  animation: 2s ease-out 1s reverse fadeInAnimation;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
